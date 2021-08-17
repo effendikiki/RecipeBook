@@ -11,3 +11,7 @@
 .btn {
   @apply w-auto px-8 py-2 my-2 text-base font-medium transition duration-500 ease-in-out transform rounded-md focus:outline-none focus:ring-2 ring-offset-current ring-offset-2;
 }
+
+.badge {
+  @apply self-start px-3 py-1 mb-3 text-xs font-semibold tracking-widest uppercase rounded-lg;
+}
