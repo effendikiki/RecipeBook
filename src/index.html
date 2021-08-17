@@ -8,11 +8,87 @@
     <title>Recipe Book</title>
 </head>
 
-<body class="min-h-screen bg-[#aaf]">
-    <div class="w-[200px] mt-[100vh] mx-auto bg-blue-400">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum rem nobis quasi enim illum optio quas provident
-        quis? Temporibus omnis officiis deserunt eos ab, facere sapiente labore sunt quis mollitia!
-    </div>
+<body class="min-h-screen">
+    <header>
+        <nav class="relative z-10 flex flex-wrap items-center justify-between px-5 py-2">
+
+            <a href="/" class="pr-2 lg:pr-8 lg:px-6 focus:outline-none">
+                <div class="inline-flex items-center">
+                    <i class="bi bi-bag-fill text-primary"></i>
+                    <h2
+                        class="block p-2 text-base font-medium tracking-tighter text-black transition duration-500 ease-in-out transform cursor-pointer sm:text-xl hover:text-blueGray-500 lg:text-x lg:mr-8">
+                        Ricetta Collection
+                    </h2>
+                </div>
+            </a>
+            <a href="http://github.com/effendikiki" target="_blank">
+                <button class="btn text-primary-dark">
+                    <i class="text-xl sm:text-3xl bi bi-github"></i>
+                </button>
+            </a>
+
+        </nav>
+
+    </header>
+    <main>
+        <section class="flex items-center px-5 py-16 mx-auto bg-primary brightness-100 md:flex-row lg:px-28">
+
+            <div class="w-full lg:flex-grow md:w-1/2 md:mr-6 lg:mr-10 xl:mr-20">
+                <div class="text-center text-primary-dark lg:pr-14 md:text-left">
+                    <h1 class="mb-2 text-3xl font-black tracking-tight capitalize md:mb-6 md:text-5xl xl:text-6xl">
+                        Resep makanan terlengkap
+                    </h1>
+                    <p class="mb-8 text-base leading-relaxed md:text-xl">
+                        Membantu kamu buat cari resep makanan favoritmu tanpa ribet
+                    </p>
+                </div>
+            </div>
+
+            <div class="justify-center hidden md:-mb-16 lg:-mb-32 lg:max-w-lg xl:max-w-2xl md:w-1/2 md:flex">
+                <img class="object-cover object-center rounded-lg w-[650px] "
+                    src="https://www.carrotsfb.com/wp-content/uploads/2020/05/food-grass-fed-beef-foodservice-products-grass-run-farms-4.png">
+            </div>
+
+        </section>
+
+        <section>
+
+            <div
+                class="relative z-20 w-5/6 py-6 mx-auto -mt-16 bg-white rounded-lg shadow-lg md:mx-0 md:ml-20 lg:w-2/3">
+                <div
+                    class="flex flex-row items-center gap-2 pl-3 ml-6 mr-4 bg-gray-100 rounded-tr-lg rounded-br-lg sm:pl-6">
+                    <i class="text-base text-gray-400 sm:text-lg bi bi-search"></i>
+                    <input
+                        class="flex-grow w-full px-4 py-3 text-xs text-black bg-transparent rounded-lg sm:text-base lg:w-auto focus:outline-none"
+                        placeholder="Ingin masak apa hari ini?" type="text">
+                    <button
+                        class="px-2 py-4 text-xs tracking-wide text-white transition rounded-tr-lg rounded-br-lg sm:text-base md:px-6 md:py-3 bg-primary focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:drop-shadow-xl">
+                        Pencarian
+                    </button>
+                </div>
+                <div class="hidden pl-6 mt-5 ml-6 mr-4 text-gray-600 sm:flex">
+                    Rekomendasi :
+                    <br>
+
+                </div>
+            </div>
+
+            <div class="px-5 py-16 mx-auto bg-white lg:px-28">
+                <h1
+                    class="mb-8 text-2xl font-bold tracking-tighter text-center text-black lg:text-left lg:text-2xl title-font">
+                    Hasil Pencarian "rendang"
+                </h1>
+                <div
+                    class="flex flex-wrap items-center justify-center mb-16 lg:justify-start xl:mr-10 md:pr-12 md:mb-0 ">
+                    <!-- wip card result -->
+
+                    <!-- wip card result -->
+                </div>
+
+            </div>
+        </section>
+    </main>
+
 
 </body>
 
