@@ -1,8 +1,6 @@
-class resultCard extends HTMLElement {
+import "./resultModal.js";
 
-    // set clickModal(event) {
-    //     this._clickModal = event;
-    // }
+class resultCard extends HTMLElement {
 
     connectedCallback() {
         this.render();
@@ -36,17 +34,19 @@ class resultCard extends HTMLElement {
                             ${this._recipe.strInstructions}
                         </p>
 
-                        <button class="btn hover:bg-primary text-primary-dark">
+                        <button id="triggerModal-${this._recipe.idMeal}" class="btn hover:bg-primary text-primary-dark">
                             Lihat detail
                         </button>
                     </div>
                 </div>
             `;
+        const modal = document.createElement("result-modal");
+        modal.recipe = this._recipe;
+        this.appendChild(modal);
 
-        // this.querySelector("#modal-button").addEventListener(
-        //     "click",
-        //     this._clickModal
-        // );
+        this.querySelector(`#triggerModal-${this._recipe.idMeal}`).addEventListener("click", () => {
+            document.querySelector(`#modal-${this._recipe.idMeal}`).classList.toggle("hidden");
+        });
     }
 }
 

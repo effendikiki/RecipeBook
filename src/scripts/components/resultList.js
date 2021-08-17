@@ -13,11 +13,13 @@ class resultList extends HTMLElement {
     render() {
         this.innerHTML = "";
         this.setAttribute("class", this.getAttribute("class"));
-        this._recipes.forEach(recipe => {
-            const card = document.createElement("result-card");
-            card.recipe = recipe;
-            this.appendChild(card);
-        });
+        if (this._recipes) {
+            this._recipes.forEach(recipe => {
+                const card = document.createElement("result-card");
+                card.recipe = recipe;
+                this.appendChild(card);
+            });
+        }
         // this.innerHTML = "";
     }
 }
